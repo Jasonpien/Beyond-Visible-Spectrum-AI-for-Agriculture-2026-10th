@@ -3,12 +3,18 @@
 # Prepare environment for HSIC project
 # This script sets up the hsic_env conda environment with required packages
 
+echo "Ensuring hsic_env environment exists..."
+# create environment if it doesn't exist
+if ! conda env list | grep -q "hsic_env"; then
+    echo "Environment not found. Creating hsic_env..."
+    conda create -y -n hsic_env python=3.8 || { echo "Failed to create environment"; exit 1; }
+fi
+
 echo "Activating hsic_env environment..."
 conda activate hsic_env
 
 if [ $? -ne 0 ]; then
-    echo "Error: Failed to activate hsic_env. Please ensure the environment exists."
-    echo "Create it with: conda create -n hsic_env python=3.8"
+    echo "Error: Failed to activate hsic_env."
     exit 1
 fi
 

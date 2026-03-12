@@ -48,7 +48,7 @@ class CFG:
     
     N_FOLDS = 5
     SEED = 2689
-    OUT_DIR = "./output_fusion2689/"
+    OUT_DIR = "./output/"
 
 
 LABELS = ["Health", "Rust", "Other"]
