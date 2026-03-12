@@ -36,7 +36,7 @@ warnings.filterwarnings('ignore')
 # Config
 # ============================================================
 class CFG:
-    ROOT = "/ssd6/pienyuzhe/ICPR2026_BeyondAI_Crop_Disease/Dataset/Kaggle_Prepared"
+    ROOT = "your dataset path/Kaggle_Prepared"
     TRAIN_DIR = "train"
     VAL_DIR = "val"
     
