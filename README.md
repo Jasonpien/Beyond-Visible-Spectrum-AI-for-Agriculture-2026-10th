@@ -36,7 +36,7 @@ Dataset/
 
 
 # 3. Predict
-Run the ```Methods.ipynb``` can generate the submission files, will be saved in folder ```results```.
+Run the ```Methods.py``` can generate the submission files, will be saved in folder ```results```.
 
 ```
 ICPR2026_BeyondAI_Crop_Disease/
